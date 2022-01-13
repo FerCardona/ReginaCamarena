@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url(../fonts/Cuprum-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --azul: #050D56;
+    --rojo: #D24822;
+    --dorado: #FFD700;
+    --rosa: #FFDAB9;
+    --blanco: #fff;
+}
+
+.contact {
+    width: 80%;
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    margin: 40px 10% 40px;
+    padding-bottom: 40px;
+}
+.contact-title h3, .contact-title p {
+    font-family: 'Cuprum';
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.contact-title p {
+    font-size: 20px;
+}
+.contact-title h3 {
+    text-transform: uppercase;
+}
+.contact-title {
+    padding-bottom: 20px;
+}
+
+.left-box {
+    float: left;
+    width: 50%;
+    height: 80%;
+}
+.right-box {
+    float: left;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../imagenes/verde.jpg') center no-repeat;
+    background-size: cover;
+}
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input[type="submit"] {
+    font-family: 'Cuprum';
+    width: 40%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.form:first-child {
+    padding-top: 10px;
+}
+.inputBox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.inputBox input, .inputBox label {
+    width: 100%;
+    padding: 0 0 0 5px;
+    font-family: 'Cuprum'; 
+}
+.inputBox input {
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+#submit {
+    font-size: 16px;
+    border: 1px solid var(--rojo);
+    border-radius: 8px;
+    outline: none;
+    background: var(--rosa);
+    color: var(--rojo);
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+#submit:hover {
+    background-color:  var(--azul);
+    color: var(--rosa);
+    border: none;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-title h3 {
+        font-size: 24px;
+    }
+    .contact-title p {
+        font-size: 22px;
+    }
+    .inputBox {
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-title h3 {
+        font-size: 18px;
+    }
+    .contact-title p {
+        font-size: 16px;
+    }
+    .inputBox {
+        width: 80%;
+    }
+    .form {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .contact-title h3 {
+        font-size: 16px;
+    }
+    .contact-title p {
+        font-size: 14px;
+    }
+    .contact {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-box {
+        width: 100%;
+    }
+    .right-box {
+        width: 100%;
+        height: 300px;
+        background: url('../imagenes/loana.jpeg') center no-repeat;
+        background-size: contain;
+    }   
+}

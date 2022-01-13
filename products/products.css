@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url(../fonts/Cuprum-Regular.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(fonts/SourceSansPro-ExtraLight.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --azul: #050D56;
+    --rojo: #D24822;
+    --dorado: #FFD700;
+    --rosa: #FFDAB9;
+    --blanco: #fff;
+}
+body {
+    overflow-x: hidden;
+}
+.products-title {
+    background: url(../imagenes/leathercover.jpg) right bottom no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: auto;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    margin-left: 2.5%;
+    padding: 10%;
+    letter-spacing: 2px;
+    background: transparent;
+}
+.products-title h1 {
+    font-size: 55px;
+    font-family: 'Cuprum';
+    color: #fff;
+    text-shadow: 0 0 2px var(--azul);
+    margin-bottom: 20px;
+
+}
+.products-title p {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+/* P R O D U C T S   S E C T I O N  */
+.products-container {
+   margin: 5vw;
+   display: flex;
+   /* display: -ms-flexbox; */
+   flex-wrap: wrap;
+   /* -ms-flex-wrap: wrap; */
+   flex-direction: column;
+   /* -ms-flex-direction: column; */
+   /* -webkit-flex-flow: row wrap; */
+   flex-flow: row wrap;
+   /* display: -webkit-box; */
+}
+
+.product {
+    /* -webkit-box-flex: auto;
+    -ms-flex: auto; */
+    flex: auto;
+    width: 225px;
+    margin: 2vw;
+    box-shadow: 0 0 6px var(--azul);
+}
+.product h2 {
+    font-family: 'Cuprum';
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 22px;
+}
+.product p {
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.img {
+    overflow: hidden;   
+}
+img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+img:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .products-title h1 {
+        font-size: 65px;
+    }
+    .products-title p {
+        font-size: 30px;
+    }
+    .product {
+        width: 300px;
+        margin: 2vw;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .products-title h1 {
+        font-size: 50px;
+    }
+    .products-title p {
+        font-size: 25px;
+    }
+    .products-container {
+        margin: 1.2%;
+     }
+    .product {
+        width: 200px;
+        margin: 1.2%;
+    }    
+    .product h2 {
+        font-size: 20px;
+    }
+    .product p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .products-title h1 {
+        font-size: 40px;
+    }
+    .products-title p {
+        font-size: 18px;
+    }
+    .product {
+        width: 150px;
+        margin: 1vw;
+    } 
+    .product h2 {
+        font-size: 18px;
+    }
+    .product p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .products-title h1 {
+        font-size: 30px;
+    }
+    .products-title p {
+        font-size: 12px;
+    }
+    .products-container {
+        margin: 5vw;
+     }
+     .product {
+        width: 150px;
+        margin: 1.2vw;
+    } 
+}

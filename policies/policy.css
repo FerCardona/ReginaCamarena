@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url(../fonts/Cuprum-Regular.ttf);
+}
+.terms-title {
+    width: 50%;
+    margin: 30px 25%;
+    height: auto;
+}
+.terms-title h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Cuprum';
+    font-size: 22px;
+}
+.terms-title h3 {
+    text-indent: 50px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Cuprum';
+}
+.terms-title p, .terms-title address,
+.terms-title b {
+    text-align: justify;
+    font-family: 'Cuprum';
+}
+.address {
+    margin-left: 30px;
+    font-family: 'Cuprum';
+}
+.refund, .shipping, .privacy {
+    margin: 30px 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .terms-title h1 {
+        font-size: 24px;
+    }
+    .terms-title h3 {
+        font-size: 18px;
+    }
+    .terms-title p, .terms-title address,
+    .terms-title b, .address {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .terms-title {
+        width: 60%;
+        margin: 30px 20%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .terms-title {
+        width: 70%;
+        margin: 30px 15%;
+    }
+    .terms-title h1 {
+        font-size: 18px;
+    }
+    .terms-title h3 {
+        font-size: 14px;
+    }
+    .terms-title p, .terms-title address,
+    .terms-title b, .address {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .terms-title {
+        width: 80%;
+        margin: 30px 10%;
+    }
+}

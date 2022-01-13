@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Camarena</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/083ef1f5f9.js" crossorigin="anonymous"></script>
+    <script src="contact.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+    emailjs.init("user_fz0Qj5FRPJhzsA3zG4pvW");
+})();
+</script>
+
+</head>
+<body>
+    <!--  H E A D E R  -->
+    <header>
+        <div class="header">
+            <h1><a href="index.html">REGINA CAMARENA</a></h1>
+            <ul>
+              <li><a href="https://www.facebook.com/regina.camarena.86" target="_blank" class="face fab fa-facebook-f"></a></li>
+			  <li><a href="https://www.instagram.com/reginacamarenaoficial/" target="_black" class="insta fab fa-instagram"></a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products/products.html">Products</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div>
+          <div class="contact-title">
+            <h3>We are very excited for hearing about you.</h3>
+            <p>For any purchase order or more information, please fill out the form and 
+            click on the Submit button.</p>
+          </div>
+          
+          <div class="left-box">
+            <form class="form" id="form" action="" autocomplete="off" required>
+              <div class="inputBox">
+                <label for="name">Name:</label>
+                <input type="text" id="name" autofocus required autocomplete="off">
+              </div>
+              <div class="inputBox">                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required autocomplete="off">
+              </div>
+              <div class="inputBox">                
+                <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" required autocomplete="off">
+              </div>
+              <div class="inputBox">                
+                <label id="message" for="message">Message:</label>
+                <input type="text" name="message" id="message" required>
+              </div>
+              <input type="submit" id="submit" onclick='sendMail()' value="Submit">
+            </form>
+          </div>
+
+          <div class="right-box">
+          </div>
+        </div>
+    </section>
+
+<!-- F O O T E R  -->
+    <footer>
+        <div class="columns">
+          <div class="left-column">
+              <p class="subtitle">Menu</p>
+              <p><a href="../products/products.html">Products</a></p>
+              <p><a href="../about/about.html">About</a></p>
+              <p><a href="contact.html">Contact</a></p>
+          </div>
+          <div class="center-column">
+            <p class="subtitle">Policies</p>
+            <p><a href="../policies/policy.html">Refund policy</a></p>
+            <p><a href="../policies/policy.html">Shipping policy</a></p>
+            <p><a href="../policies/policy.html">Privacy policy</a></p>
+          </div>
+          <div class="right-column">
+            <p class="subtitle">Social Media</p>
+            <a class="instagram foot" href="https://www.instagram.com/fcardona7/"><i class="fab fa-instagram"></i></a>
+            <a class="facebook foot" href="https://www.facebook.com/fcardona8/"><i class="fab fa-facebook-f"></i></a>            
+        </div>
+      </div>
+          <div class="copyright">
+              © Copyright 2021. Made by Fernando Cardona
+          </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,460 @@
+@font-face {
+    font-family: "Cuprum";
+    src: url(fonts/Cuprum-Regular.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    background-color: rgba(255, 218, 185, 0.4);
+    z-index: -1;    
+}
+:root {
+    --azul: #050D56;
+    --rojo: #D24822;
+    --dorado: #FFD700;
+    --rosa: #FFDAB9;
+    --blanco: #fff;
+}
+
+/* H E A D E R  */
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(5, 13, 86, 0.15);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 20px 0 0 0;
+}
+.header h1 {
+    margin: 20px 30px 0;
+}
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px 0;
+    list-style-type: none;
+}
+.header li {
+    padding: 0 20px;
+    font-size: 25px;
+    vertical-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--dorado);
+}
+.header h1 a:link,.header h1 a:visited, .header h1 a:active {
+    color: #000;
+    font-family: 'Cuprum';
+    font-weight: normal;
+}
+.header a:link,.header a:visited, .header a:active,
+.navbar a:link,.navbar a:visited, .navbar a:active {
+    text-decoration: none;
+}
+.face:link, .face:visited, .face:active {
+    color: #000;
+    transition: color 0.2s ease-in-out;
+}
+.face:hover {
+    color: var(--rosa);
+}
+.insta:link, .insta:visited, .insta:active {
+    color: #000;
+    transition: color 0.2s ease-in-out;
+}
+.insta:hover {
+    color: var(--rosa);
+}
+/*  N A V I G A T I O N   B A R  */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar li {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.navbar a:link, .navbar a:visited, .narbar a:active {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.navbar .active {
+    background-color: rgba(255, 218, 185, 1);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* P O R T R A I T   I M A G E  */
+main {
+    background: url(imagenes/tamara.jpg) right bottom no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 85vh;
+    position: relative;
+}
+.main {
+    width: 57%;
+    height: auto;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.main h1 {
+    font-family: 'Cuprum';
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 0 0 2px var(--azul);
+    margin-bottom: 20px;
+}
+.main a {
+    width: 180px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: rgba(5, 13, 86, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--rosa);
+}
+.main a:link, .main a:visited, .main a:active {
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+.main a:hover {
+    background-color: var(--azul);
+    
+}
+
+/*  B R A N D  */
+.brand {
+    width: 75%;
+    height: 100vh;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-brand {
+    float: left;
+    width: 40vw;
+    height: 80vh;
+    background: url('imagenes/elisa1.jpg') center;
+    background-size: cover;
+    box-shadow: 0 0 6px var(--azul);
+    
+}
+.brand p {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0px 0 30px;
+    width: 60%;
+    line-height: 1.5;
+    color: var(--azul);
+}
+/* F E A T U R E S  */
+.features {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 5px;
+    color: var(--azul);
+}
+.img-box {
+    width: 100%;
+    height: 320px;
+    box-shadow: 0 0 6px var(--azul);
+}
+.img-box.left {
+    background: url('imagenes/regine.jpg') center no-repeat;
+    background-size: cover;
+}
+.img-box.center {
+    background: url('imagenes/marcelle1.jpg') center no-repeat;
+    background-size: cover;
+}
+.img-box.right {
+    background: url('imagenes/pinky.jpg') center no-repeat;
+    background-size: cover;
+}
+.container p {
+    text-align: justify;
+    font-weight: bolder;
+}
+.info h2 {
+    font-family: 'Cuprum', sans-serif;
+    margin: 10px 0;
+}
+
+/* F O O T E R  */
+.columns {
+    margin: 10px 0;
+}
+.columns a:link,.columns a:visited, 
+.columns a:active {
+    text-decoration: none;
+    color: #000;
+}
+.columns a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--azul);
+}
+
+footer {
+    background-color: #fff;bottom: 0;
+    height: auto;
+    position: relative;
+    color: #000;
+    font-weight: bolder;
+    margin-top: 20px;
+    box-shadow: 0 -1px 10px rgba(5, 13, 86, 0.15);
+}
+.subtitle {
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+footer p {
+    font-size: 16px;
+}
+.left-column, .center-column, .right-column  {
+    float: left;
+    padding: 30px 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.left-column {
+    margin-left: 10%;
+    width: 30%;  
+}
+.center-column {
+    width: 30%;
+}
+.right-column {
+    width: 30%;
+}
+
+.columns:after {
+    content:"";
+	display: table;
+	clear: both;
+}
+.copyright {
+    font-size: 12px;
+    bottom: 10px;
+    padding: 10px;
+    width: 60%;
+    margin-left: 20%;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+.right-column a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.facebook.foot:link,.facebook.foot:visited, .facebook.foot:active {
+    text-decoration: none;
+    color:  #000;
+    cursor: pointer;
+    transition: scale 0.3s;
+}
+.facebook.foot:hover {
+    transform: scale(1.2);
+}
+.instagram.foot:link,.instagram.foot:visited, .instagram.foot:active {
+    text-decoration: none;
+    color:  #000;
+    cursor: pointer;
+    transition: scale 0.3s;
+}
+.instagram.foot:hover {
+    transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 1200px) {
+/*  N A V I G A T I O N   B A R  */
+    .navbar li {
+        font-size: 20px;
+    }
+/* P O R T R A I T   I M A G E  */
+    .main {
+        width: 50%;
+        top: 45vh;
+    }
+    .main h1 {
+        font-size: 65px;
+    }
+
+/*  B R A N D  */
+    .brand {
+        width: 70%;
+    }
+    .brand p {
+        padding: 0 0px 0 40px;
+        width: 55%;
+    }
+/* F E A T U R E S  */
+    .container {
+        width: 334px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+/*  N A V I G A T I O N   B A R  */
+    .navbar li {
+        font-size: 16px;
+    }
+/* P O R T R A I T   I M A G E  */
+    .main {
+        width: 71%;
+    }
+    .main h1 {
+        font-size: 55px;
+    }
+    .main a {
+        width: 180px;
+        font-size: 16px;
+    }
+
+
+ /*  B R A N D  */   
+    .brand p {
+        font-size: 25px;
+        padding: 0 0 0 20px;
+        width: 65%;
+    }
+    .brand {
+        width: 80%;
+    }
+    .img-brand {
+        height: 60vh;  
+    }
+/* F O O T E R  */
+    .subtitle {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+/*  H E A D E R  */
+    .header h1 {
+        font-size: 25px;
+    }
+    .header li {
+        font-size: 20px;
+    }
+/*  N A V I G A T I O N   B A R  */
+    .navbar li {
+        font-size: 12px;
+    }
+/* P O R T R A I T   I M A G E  */
+    main {
+        background-position: center;
+    }
+    .main {
+        width: 80%;
+    }
+    .main h1 {
+        font-size: 45px;
+    }
+    .main a {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+/*  B R A N D  */
+    .brand {
+        width: 90%;
+        margin: 20px 5%;
+        flex-direction: column;
+    }
+    .img-brand {
+        float: none;
+        width: 100%;
+        height: 50vh;
+        background: url('imagenes/debora.jpg') right center;
+        background-size: cover;        
+    }
+    .brand p {
+        text-align: justify;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    /* F O O T E R  */
+    .subtitle {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+/*  H E A D E R  */
+    .header h1 {
+        font-size: 25px;
+    }
+    .header li {
+        font-size: 20px;
+    }
+/*  N A V I G A T I O N   B A R  */
+    .navbar li {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+/* P O R T R A I T   I M A G E  */
+    .main {
+        width: 90%;
+    }
+    .main h1 {
+        font-size: 40px;
+    }
+    /* F O O T E R  */
+    .left-column, .center-column, .right-column {
+        padding: 20px 0;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .right-column a {
+        font-size: 18px;
+    }
+}
